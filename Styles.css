@@ -1,0 +1,67 @@
+:root{
+    --poppins: 'Poppins', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--poppins);
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;       
+}
+
+.header_container{
+   min-height: 100vh;
+   position: relative;
+}
+
+.presentation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo_container{
+    width: 45%;
+    max-width: 160px;
+}
+
+.logo_ab{
+    width: 75%;
+    display: block;
+}
+
+.slogan_ab{
+    font-size: 12px;
+    color: #555;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.nav_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.nav_links a{
+    display: inline-block;
+    text-decoration: none;   
+    color: #333;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
