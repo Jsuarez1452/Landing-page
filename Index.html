@@ -27,38 +27,76 @@
 
         <nav class="nav_container">
             <div class="nav_links">
-                <a href="#productos">Productos</a>
+                <a href="#productos">Productos Destacados</a>
+                <a href="#ofertas">Ofertas</a>
                 <a href="#contacto">Contacto</a>
-                <a href="#blog">Blog</a>
             </div>
         </nav>
     </header>
 
     <main>
         <section id="jumbotron">
-            <h2>Productos Destacados</h2>
-            <ul>>
-                <li>Arroz</li>
-                <li>Frijoles</li>
-                <li>Azúcar</li>
-                <li>Harina</li>
-                <li>Sal</li>
-            </ul>
+            <figure class="jumbotron_container">
+                <img class="jumbotron_img" src="./Images/Jumbotron.webp" alt="Abarrotes">
+            </figure>
+
+
+        </section>
+        <section id="productos">
+
+            <div class="products_header">
+                <h2>Productos Destacados</h2>
+                <p>Encuentra todo lo que necesitas para tu hogar.</p>
+            </div>
+
+            <div class="product_list_container">
+                <figure class="product_list">
+                    <img class="agua_bonafont" src="./Images/bonafont_agua.webp" alt="Agua Bonafont 1.5Lt">
+                    <img class="atun_tuny" src="./Images/atun_tuny_agua.webp" alt="Atun Tuny En Agua">
+                    <img class="santa_clara" src="./Images/santa_clara_leche.webp" alt="Leche Santa Clara 1Lt">
+                    <img class="modelo_especial" src="./Images/cerveza_modelo.webp" alt="Cerveza Modelo Especial">
+                </figure>
+            </div>
         </section>
 
-        <section id="blog">
+        <section id="ofertas" class="ofertas_container">
             <h2>Ofertas Especiales</h2>
-            <p>Visita nuestra tienda para conocer las ofertas del mes.</p>
+
+            <figure class="ofertas_list">
+                <img class="oferta_1" src="./Images/oferta_1.png" alt="Oferta 1: Descuento en productos seleccionados">
+                <img class="oferta_2" src="./Images/oferta_2.png" alt="Oferta 2: Compra uno y lleva el segundo a mitad de precio">
+                <img class="oferta_3" src="./Images/oferta_3.png" alt="Oferta 3: 2x1 en productos de limpieza">
+            </figure>
+
+            <p>Visita nuestra tienda para conocer aun más ofertas increibles.</p>
         </section>
 
-        <section id="adicional">
+        <section id="contacto" class="contacto_container">
             <h2>Contacto</h2>
-            <p>Para más información, contáctanos al correo:
+            <p>¿Tienes alguna pregunta o necesitas ayuda? Contáctanos:</p>
+
+            <ul class="contact_info">
+                <li><ion-icon name="call-outline"></ion-icon> Teléfono: 123-456-7890</li>
+                <li><ion-icon name="mail-outline"></ion-icon> Email: example@example.com</li>
+            </ul>
+            <p>Visítanos en nuestra tienda física:</p>
+            <p>Dirección: Calle Ficticia 123, Ciudad, País</p>
         </section>
     </main>
     
-    <footer>
-        <p>&copy; 2023 Abarrotes Juanita. Todos los derechos reservados.</p>
+    <footer class="footer_container">
+        <h2>Buscanos en nuestras redes sociales</h2>
+        <figure class="footer_social_media">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>    
+            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+        </figure>
+            
+        <p class="copyright">&copy; 2025 Abarrotes Juanita. Todos los derechos reservados.</p>
     </footer>    
 </body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>

@@ -23,7 +23,7 @@ body{
 }
 
 .header_container{
-   min-height: 100vh;
+   min-height: 15vh;
    position: relative;
 }
 
@@ -36,19 +36,20 @@ body{
 
 .logo_container{
     width: 45%;
-    max-width: 160px;
+    max-width: 120px;
+    max-height: 120px;
+    margin-bottom: 20px; ;
 }
 
 .logo_ab{
     width: 75%;
     display: block;
+    min-width: 120px;
 }
 
 .slogan_ab{
     font-size: 12px;
     color: #555;
-    margin-top: 5px;
-    margin-left: 5px;
 }
 
 .nav_container{
@@ -64,4 +65,205 @@ body{
     font-size: 14px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.jumbotron{
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.jumbotron_img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 30px 0;
+}
+
+.products_header h2{
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.products_header p{
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.product_list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px 20px;
+}
+.product_list img{
+    width: 100%;
+    justify-content: space-between;
+    display: block;
+    border-radius: 10px;
+}
+
+.product_list img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.ofertas_container h2{
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.ofertas_container p{
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.ofertas_list{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.ofertas_list img{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+
+.footer_social_media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer_social_media a{
+    text-decoration: none;
+    color: #333;
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.footer_social_media a:hover{
+    color: #007bff;
+}
+
+.contacto_container h2{
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto_container p{
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.contact_info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer_container h2{
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+    .presentation {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .slogan_ab {
+        font-size: 16px;
+        color: #555;
+    }
+    
+    .logo_container {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav_links a {
+        padding: 30px;
+    }
+    
+    .product_list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    
+    .ofertas_list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ofertas_list img {
+        max-width: 600px;
+        margin: 10px 0;
+    }
+
+    .copyright {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 14px;
+        color: #777;
+    }
+}
+
+@media (min-width: 1440px) {
+    .presentation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo_container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav_links a {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .product_list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .ofertas_list {
+        flex-direction: column;
+        align-items: center;
+    }
 }
